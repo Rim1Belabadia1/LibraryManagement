@@ -1,0 +1,26 @@
+
+Lcom.example.demo.controller.BookController#encodeImage([B)Ljava/lang/String;Þ
+ÓC:/Users/User/Desktop/employee-management-system-angular-spring-boot-mysql-main/employee-management-system-angular-spring-boot-mysql-main/emp_backend/src/main/java/com/example/demo/controller/BookController.javaL L("1*¶
+1M M(˜
+•
+M M("
+%0java.util.Base64$Encoder"7java.util.Base64#getEncoder()Ljava/util/Base64$Encoder;*0
+
+__unknown_file ("
+java.util.Base64åâ
+M M(8
+%1java.lang.String"=java.util.Base64$Encoder#encodeToString([B)Ljava/lang/String;*<
+
+__unknown_file ( 
+
+%0java.util.Base64$Encoder*-
+
+__unknown_file (
+
+imagebyte[]2encodeToString([B)"$
+M M(9
+
+%1java.lang.String:
+L L(+
+imagebyte[]B.,
+*com.example.demo.controller.BookController

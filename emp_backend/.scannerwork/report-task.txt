@@ -1,0 +1,7 @@
+organization=rimsonnar
+projectKey=rimsonnar_sonnar
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.58741
+dashboardUrl=https://sonarcloud.io/dashboard?id=rimsonnar_sonnar
+ceTaskId=AZQPXu4-Oqr6qfjIr8GN
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZQPXu4-Oqr6qfjIr8GN

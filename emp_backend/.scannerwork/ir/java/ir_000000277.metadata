@@ -1,0 +1,6 @@
+com.example.demo.controller.BookController#getBookById(Ljava/lang/Long;)LResponseEntity;
+false
+e05ccd91d99ab19c4cc52ee862e31540
+java.util.Optional#map(Ljava/util/function/Function;)Ljava/util/Optional;
+==
+!unknownMethod! !unknownMethod!

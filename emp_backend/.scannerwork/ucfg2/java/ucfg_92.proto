@@ -1,0 +1,51 @@
+
+}com.example.demo.controller.EmpruntController#createEmprunt(Lcom/example/demo/model/Emprunt;)Lcom/example/demo/model/Emprunt;á
+ÖC:/Users/User/Desktop/employee-management-system-angular-spring-boot-mysql-main/employee-management-system-angular-spring-boot-mysql-main/emp_backend/src/main/java/com/example/demo/controller/EmpruntController.java) )( "startingBlock*ß
+startingBlock)  )(>•
+’
+( ((
+%1"
+__annotate*+
+
+__unknown_file (
+PostMapping*G
+
+__unknown_file (+
+)
+empruntcom.example.demo.model.Emprunt•
+’
+)! )(-
+%2"
+__annotate*+
+
+__unknown_file (
+RequestBody*G
+
+__unknown_file (+
+)
+empruntcom.example.demo.model.EmpruntŽ
+‹
+)6 )(=)
+empruntcom.example.demo.model.Emprunt"__annotation*"
+
+__unknown_file (
+
+%1*"
+
+__unknown_file (
+
+%2*
+1*Ò
+1* *( ®
+«
+* *( 3
+%0-com.example.demo.repository.EmpruntRepository"__id*d
+
+__unknown_file (H*F/
+-com.example.demo.controller.EmpruntController"
+empruntRepository"
+* *(/
+"":5
+)! )(=)
+empruntcom.example.demo.model.EmpruntB1/
+-com.example.demo.controller.EmpruntControllerH
