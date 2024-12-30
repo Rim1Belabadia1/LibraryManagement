@@ -1,6 +1,0 @@
-com.example.demo.controller.EmpruntController#updateEmprunt(Ljava/lang/Long;Lcom/example/demo/model/Emprunt;)Lcom/example/demo/model/Emprunt;
-false
-230ca7ee6d8a481fe8f1f075c70046c4
-==
-!unknownMethod! !unknownMethod!
-setId com.example.demo.model.Emprunt#setId(Ljava/lang/Long;)V

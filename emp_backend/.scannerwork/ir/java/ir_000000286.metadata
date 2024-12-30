@@ -1,8 +1,0 @@
-com.example.demo.adminController.adminController#registerAdmin(Lcom/example/demo/adminModel/adminModel;)LResponseEntity;
-false
-a5d2f45c9687aa894765563cf722b6b9
-java.util.Optional#isPresent()Z
-==
-!unknownMethod! !unknownMethod!
-findByAdminName com.example.demo.adminRepository.adminRepository#findByAdminName(Ljava/lang/String;)Ljava/util/Optional;
-getAdminName com.example.demo.adminModel.adminModel#getAdminName()Ljava/lang/String;

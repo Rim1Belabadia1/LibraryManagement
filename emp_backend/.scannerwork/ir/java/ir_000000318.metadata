@@ -1,9 +1,0 @@
-com.example.demo.jwt.JwtRequestFilter#doFilterInternal(LHttpServletRequest;LHttpServletResponse;LFilterChain;)V
-false
-8483c26b7e24aa7af478c8ce7192cfca
-java.lang.String#startsWith(Ljava/lang/String;)Z
-java.lang.String#substring(I)Ljava/lang/String;
-==
-!unknownMethod! !unknownMethod!
-extractRole com.example.demo.jwt.JwtUtil#extractRole(Ljava/lang/String;)Ljava/lang/String;
-extractUsername com.example.demo.jwt.JwtUtil#extractUsername(Ljava/lang/String;)Ljava/lang/String;

@@ -1,6 +1,0 @@
-com.example.demo.controller.BookController#encodeImage([B)Ljava/lang/String;
-false
-6c4de13987801aa01400f60f38604602
-java.util.Base64#getEncoder()Ljava/util/Base64$Encoder;
-==
-encodeToString java.util.Base64$Encoder#encodeToString([B)Ljava/lang/String;

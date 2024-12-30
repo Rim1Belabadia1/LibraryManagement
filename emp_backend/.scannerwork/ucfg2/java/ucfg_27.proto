@@ -1,16 +1,0 @@
-
-Acom.example.demo.model.Employee#getDepartment()Ljava/lang/String;Ó
-ÈC:/Users/User/Desktop/employee-management-system-angular-spring-boot-mysql-main/employee-management-system-angular-spring-boot-mysql-main/emp_backend/src/main/java/com/example/demo/model/Employee.javaZ Z("1*°
-1[	 [({
-y
-[	 [(
-%0java.lang.String"__id*O
-
-__unknown_file (3*1!
-com.example.demo.model.Employee"
-
-department"$
-[ [(
-
-%0java.lang.StringB#!
-com.example.demo.model.EmployeeH

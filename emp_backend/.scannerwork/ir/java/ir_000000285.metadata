@@ -1,8 +1,0 @@
-com.example.demo.adminController.adminController#login(Lcom/example/demo/adminModel/adminModel;)LResponseEntity;
-false
-e19ec1e4335234888ee415518e8fa198
-==
-!unknownMethod! !unknownMethod!
-findByAdminNameAndAdminPassword com.example.demo.adminRepository.adminRepository#findByAdminNameAndAdminPassword(Ljava/lang/String;Ljava/lang/String;)Lcom/example/demo/adminModel/adminModel;
-getAdminName com.example.demo.adminModel.adminModel#getAdminName()Ljava/lang/String;
-getAdminPassword com.example.demo.adminModel.adminModel#getAdminPassword()Ljava/lang/String;

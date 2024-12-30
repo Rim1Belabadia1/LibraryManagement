@@ -1,5 +1,0 @@
-com.example.demo.exception.UserNotFoundException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-false
-2fc862f2fffa5b8cef3d123246eeeaa7
-==
-<init> java.lang.RuntimeException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V
