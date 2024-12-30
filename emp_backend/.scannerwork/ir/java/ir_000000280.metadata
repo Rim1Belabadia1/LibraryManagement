@@ -1,0 +1,7 @@
+com.example.demo.controller.BookController#deleteBook(Ljava/lang/Long;)LResponseEntity;
+false
+b34d318dfe92b1c65e916039ab2373c3
+java.util.Optional#get()Ljava/lang/Object;
+java.util.Optional#isPresent()Z
+==
+!unknownMethod! !unknownMethod!

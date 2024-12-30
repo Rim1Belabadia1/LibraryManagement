@@ -1,0 +1,8 @@
+com.example.demo.exception.GlobalExceptionHandler#handleInvalidCredentialsException(Lcom/example/demo/exception/InvalidCredentialsException;LWebRequest;)LResponseEntity;
+false
+a93fe5ce27d7b2e55b20edac85c15ff7
+com.example.demo.exception.ErrorDetails#<init>(ILjava/lang/String;Ljava/lang/String;)V
+com.example.demo.exception.ErrorDetails#instance-init#
+==
+!unknownMethod! !unknownMethod!
+getMessage java.lang.Throwable#getMessage()Ljava/lang/String;

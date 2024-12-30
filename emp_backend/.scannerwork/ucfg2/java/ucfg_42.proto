@@ -1,0 +1,14 @@
+
+Hcom.example.demo.controller.BookController#getAllBooks()Ljava/util/List;Þ
+ÓC:/Users/User/Desktop/employee-management-system-angular-spring-boot-mysql-main/employee-management-system-angular-spring-boot-mysql-main/emp_backend/src/main/java/com/example/demo/controller/BookController.java (!"1*É
+1 (¥
+¢
+ (0
+%0*com.example.demo.repository.BookRepository"__id*^
+
+__unknown_file (B*@,
+*com.example.demo.controller.BookController"
+bookRepository"
+ ((
+""B.,
+*com.example.demo.controller.BookControllerH

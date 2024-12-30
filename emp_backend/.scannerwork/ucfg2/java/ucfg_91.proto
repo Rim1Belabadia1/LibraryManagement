@@ -1,0 +1,52 @@
+
+bcom.example.demo.controller.EmpruntController#getEmpruntById(Ljava/lang/Long;)Ljava/util/Optional;á
+ÖC:/Users/User/Desktop/employee-management-system-angular-spring-boot-mysql-main/employee-management-system-angular-spring-boot-mysql-main/emp_backend/src/main/java/com/example/demo/controller/EmpruntController.java# #(+"startingBlock*›
+startingBlock#+ #(B~
+|
+" "(
+%1"
+__annotate**
+
+__unknown_file (
+
+GetMapping*2
+
+__unknown_file (
+
+idjava.lang.Long€
+~
+#, #(9
+%2"
+__annotate*,
+
+__unknown_file (
+PathVariable*2
+
+__unknown_file (
+
+idjava.lang.Longx
+v
+#? #(A
+idjava.lang.Long"__annotation*"
+
+__unknown_file (
+
+%1*"
+
+__unknown_file (
+
+%2*
+1*Ò
+1$ $( ®
+«
+$ $( 3
+%0-com.example.demo.repository.EmpruntRepository"__id*d
+
+__unknown_file (H*F/
+-com.example.demo.controller.EmpruntController"
+empruntRepository"
+$ $(.
+"": 
+#, #(A
+idjava.lang.LongB1/
+-com.example.demo.controller.EmpruntControllerH

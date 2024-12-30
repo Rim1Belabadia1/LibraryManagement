@@ -1,0 +1,8 @@
+com.example.demo.exception.GlobalExceptionHandler#handleUserNotFoundException(Lcom/example/demo/exception/UserNotFoundException;LWebRequest;)LResponseEntity;
+false
+9314e8106ce4fa6cd1c4013dddcd1201
+com.example.demo.exception.ErrorDetails#<init>(ILjava/lang/String;Ljava/lang/String;)V
+com.example.demo.exception.ErrorDetails#instance-init#
+==
+!unknownMethod! !unknownMethod!
+getMessage java.lang.Throwable#getMessage()Ljava/lang/String;

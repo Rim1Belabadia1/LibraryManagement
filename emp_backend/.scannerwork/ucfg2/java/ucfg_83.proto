@@ -1,0 +1,15 @@
+
+Hcom.example.demo.model.Emprunt#getDateAcquisition()Ljava/time/LocalDate;Ò
+ÇC:/Users/User/Desktop/employee-management-system-angular-spring-boot-mysql-main/employee-management-system-angular-spring-boot-mysql-main/emp_backend/src/main/java/com/example/demo/model/Emprunt.java5 5('"1*¼
+16 6(ƒ
+€
+6 6(
+%0java.time.LocalDate"__id*S
+
+__unknown_file (7*5 
+com.example.demo.model.Emprunt"
+dateAcquisition"'
+6 6(
+
+%0java.time.LocalDateB" 
+com.example.demo.model.EmpruntH
