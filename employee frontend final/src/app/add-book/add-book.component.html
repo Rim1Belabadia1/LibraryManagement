@@ -1,0 +1,124 @@
+<!-- src/app/add-book/add-book.component.html -->
+ <style>
+  .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.text-danger {
+  font-size: 12px;
+  color: #d9534f;
+  margin-top: 5px;
+}
+
+ </style>
+<div class="container">
+  <h2>Ajouter un Livre</h2>
+  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" id="name" formControlName="name" class="form-control" />
+      <div *ngIf="bookForm.get('name')?.invalid && bookForm.get('name')?.touched" class="text-danger">
+        Le nom est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input type="text" id="type" formControlName="type" class="form-control" />
+      <div *ngIf="bookForm.get('type')?.invalid && bookForm.get('type')?.touched" class="text-danger">
+        Le type est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" formControlName="description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="editeur">Éditeur</label>
+      <input type="text" id="editeur" formControlName="editeur" class="form-control" />
+      <div *ngIf="bookForm.get('editeur')?.invalid && bookForm.get('editeur')?.touched" class="text-danger">
+        L'éditeur est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="auteur">Auteur</label>
+      <input type="text" id="auteur" formControlName="auteur" class="form-control" />
+      <div *ngIf="bookForm.get('auteur')?.invalid && bookForm.get('auteur')?.touched" class="text-danger">
+        L'auteur est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="dateDePublication">Date de Publication</label>
+      <input type="date" id="dateDePublication" formControlName="dateDePublication" class="form-control" />
+      <div *ngIf="bookForm.get('dateDePublication')?.invalid && bookForm.get('dateDePublication')?.touched" class="text-danger">
+        La date de publication est requise.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="availability">Disponibilité</label>
+      <input type="text" id="availability" formControlName="availability" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="photo">Photo</label>
+      <input type="file" id="photo" (change)="onFileSelected($event)" class="form-control" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary" [disabled]="bookForm.invalid">Ajouter Livre</button>
+  </form>
+</div>

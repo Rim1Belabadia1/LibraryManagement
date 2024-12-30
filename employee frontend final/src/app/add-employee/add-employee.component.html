@@ -1,0 +1,161 @@
+<div class="container-sm background-section">
+  <div class="row justify-content-center">
+    <!-- Image à gauche -->
+    <!-- <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <img src="../../assets/0_jlh5x3jEmxZDmKbg.jpg" alt="Image" class="img-fluid rounded" />
+    </div> -->
+
+    <!-- Formulaire à droite -->
+    <div class="col-md-6">
+      <div class="form-container">
+        <h2 class="text-center mb-4">
+          <i class="bi bi-person-plus-fill"></i> Ajouter un utilisateur :
+        </h2>
+
+    <form
+      #f="ngForm"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      class="row g-3 form-container container-sm"
+    >
+    <!-- Titre avec reformulation -->
+<!-- <div class="text-center mb-4">
+  <h3>Vous pouvez également vous inscrire via vos réseaux sociaux</h3>
+</div> -->
+
+<!-- Boutons de connexion via les réseaux sociaux -->
+<!-- <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+  <button type="button" class="btn btn-dark btn-floating mx-1">
+    <i class="fab fa-facebook-f"></i>
+  </button> -->
+
+  <!-- <button type="button" class="btn btn-dark btn-floating mx-1">
+    <i class="fab fa-twitter"></i>
+  </button> -->
+
+  <!-- <button type="button" class="btn btn-dark btn-floating mx-1">
+    <i class="fab fa-linkedin-in"></i>
+  </button> -->
+<!-- </div> -->
+
+      <div class="form-group">
+        <label><b>Nom et Prénom</b></label>
+        <input
+          type="text"
+          class="form-control rounded-pill"
+          id="fname"
+          [(ngModel)]="employee.fname"
+          name="fname"
+          required
+          minlength="3"
+          #fname="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && fname.errors }"
+        />
+        <div *ngIf="f.submitted && fname.errors" class="invalid-feedback">
+          <div *ngIf="fname.errors['required']">First name is required</div>
+          <div *ngIf="fname.errors['minlength']">
+            First Name minimum 3 characters are required!!!
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <label><b>Email Id</b></label>
+        <input
+          type="email"
+          class="form-control rounded-pill"
+          id="email"
+          [(ngModel)]="employee.email"
+          name="email"
+          required
+          email
+          #email="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
+        />
+        <div *ngIf="f.submitted && email.errors" class="invalid-feedback">
+          <div *ngIf="email.errors['required']">Email is required</div>
+          <div *ngIf="email.invalid">Invalid email format</div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <label><b>Date de naissance</b></label>
+        <input
+          type="date"
+          class="form-control rounded-pill"
+          id="joiningDate"
+          [(ngModel)]="employee.joiningDate"
+          name="joiningDate"
+          required
+          #joiningDate="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && joiningDate.errors }"
+          [ngModelOptions]="{ updateOn: 'blur' }"
+          [min]="minDate()"
+        />
+        <div *ngIf="f.submitted && joiningDate.errors" class="invalid-feedback">
+          <div *ngIf="joiningDate.errors['required']">
+            Joining Date is required
+          </div>
+          <div *ngIf="joiningDate.errors['minDate']">
+            Joining Date must be before 2024
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <label><b>Mot de passe</b></label>
+        <input
+          type="password"
+          class="form-control rounded-pill"
+          id="lname"
+          [(ngModel)]="employee.lname"
+          required
+          name="lname"
+          #lname="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && lname.errors }"
+        />
+        <div *ngIf="f.submitted && lname.errors" class="invalid-feedback">
+          <div *ngIf="lname.errors['required']">Password is required</div>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="form-group">
+        <label><b>Confirmez vote mot de passe</b></label>
+        <input
+          type="password"
+          class="form-control rounded-pill"
+          id="passwordconf"
+        />
+      </div> -->
+
+
+      <!-- Submit Button -->
+      <div class="form-group d-flex justify-content-between">
+        <button
+          class="btn btn-success full-width-button"
+          type="submit"
+          id="reg"
+          [disabled]=""
+        >
+          Submit
+        </button>
+
+        <button
+          type="button"
+          (click)="goToEmployeeList()"
+          class="btn btn-danger full-width-button"
+        >
+          Cancel
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

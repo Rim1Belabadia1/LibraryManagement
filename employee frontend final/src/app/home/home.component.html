@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebTutorial - Best Learning Platform</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Angular Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Styles -->
+  <style>
+    /* Ensure the body fills the screen */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    /* Main content section to take the remaining space */
+    main {
+      flex-grow: 1;
+    }
+
+    /* Section styles */
+    .section {
+      padding: 20px;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #2c2c2c; /* Fond sombre */
+      color: #ffffff; /* Texte blanc */
+      padding: 40px 0;
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      width: 100%;
+      margin-top: auto; /* Push the footer to the bottom of the page */
+    }
+
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px; /* Espacement entre les éléments */
+    }
+
+    .footer-brand,
+    .footer-list {
+      flex: 1; /* Chaque section prend une largeur équitable */
+      min-width: 250px; /* Largeur minimale pour la réactivité */
+    }
+
+    .footer-brand .logo {
+      display: block;
+      font-size: 1.8rem;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
+
+    .footer-text {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 5px;
+    }
+
+    .email-field {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .form-btn {
+      background-color: #ff9800;
+      color: #ffffff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-btn:hover {
+      background-color: #e68900;
+    }
+
+    .footer-list-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .footer-list li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-link,
+    .contact-link {
+      color: #cccccc;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    .footer-link:hover,
+    .contact-link:hover {
+      color: #ff9800;
+    }
+
+    .material-icons {
+      font-size: 1.2rem;
+      color: #ff9800;
+    }
+
+    .contact-link {
+      display: inline-block;
+      line-height: 1.4;
+    }
+
+    /* Footer Bottom Section (if needed later) */
+    .footer-bottom {
+      background-color: #222222;
+      color: #aaaaaa;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Content -->
+  <main>
+    <article>
+      <!-- Hero Section -->
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle has-before">Bienvenue sur notre site d'empreinte de livres</p>
+            <h1 class="h1 hero-title">La meilleure plateforme pour emprunter des livres</h1>
+            <p class="hero-text">
+              Explorez une vaste collection de livres passionnants, empruntez vos titres préférés et plongez-vous dans des histoires captivantes.
+              Profitez de notre service rapide et simple pour enrichir vos connaissances et vous divertir.
+            </p>
+            <div class="btn-group">
+              <a href="#books" class="btn btn-primary">Consulter notre bibliothéque</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Features Section -->
+      <section class="section features" id="features" aria-label="features">
+        <div class="container">
+          <p class="section-subtitle text-center">-Pourquoi Choisir Notre Plateforme-</p>
+          <h2 class="h2 section-title text-center">Les Raisons de Choisir Notre Site</h2>
+          <p class="section-text text-center">
+            Profitez de livres gratuits et payants, avec ou sans options d'abonnement. Empruntez vos titres préférés facilement et à tout moment.
+          </p>
+
+          <!-- Liste des fonctionnalités -->
+          <ul class="grid-list">
+            <li>
+              <div class="features-card">
+                <data class="card-number" value="01">01</data>
+                <h3 class="h3 card-title">Accès Gratuit pendant 30 Jours</h3>
+                <p class="card-text">Profitez d'un accès gratuit à une large sélection de livres pendant 30 jours.</p>
+              </div>
+            </li>
+            <li>
+              <div class="features-card">
+                <data class="card-number" value="02">02</data>
+                <h3 class="h3 card-title">Prêt de Livres pendant 6 Mois</h3>
+                <p class="card-text">Empruntez vos livres pour une période de 6 mois et prolongez-les si nécessaire.</p>
+              </div>
+            </li>
+            <li>
+              <div class="features-card">
+                <data class="card-number" value="03">03</data>
+                <h3 class="h3 card-title">Pas de Retards, Pas de frais</h3>
+                <p class="card-text">Si vous respectez la durée de prêt, il n'y a pas de frais de retard, soyez prudent.</p>
+              </div>
+            </li>
+            <li>
+              <div class="features-card">
+                <data class="card-number" value="04">04</data>
+                <h3 class="h3 card-title">Empruntez Facilement nos livres</h3>
+                <p class="card-text">Empruntez vos livres en quelques clics, sans tracas.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <ngb-carousel>
+          <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                  <img style="width: 100vw;     height: 610px;" src="../../assets/pexels-photo-8567039.jpeg" alt="Random first slide" />
+              </div>
+              <div class="carousel-caption">
+                <h3 id="p1">"Un livre est un ami qui ne trahit jamais."</h3>
+                <p>- Confucius</p>
+              </div>
+          </ng-template>
+          <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                  <img style="width: 100vw;     height: 610px;" src="../../assets/hihi.jpg" alt="Random second slide" />
+              </div>
+              <div class="carousel-caption">
+                <h3 id="p1">"La lecture, une fenêtre ouverte sur le monde."</h3>
+                <p>- Jean-Paul Sartre</p>
+              </div>
+          </ng-template>
+          <!-- <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                  <img [src]="images[2]" alt="Random third slide" />
+              </div>
+              <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+          </ng-template> -->
+      </ngb-carousel>
+      </section>
+      <section id="about-us" class="about-us-section">
+        <div class="about-us-content">
+          <h2 class="section-title">À Propos de Nous</h2>
+          <p class="section-text">
+            Bienvenue sur notre plateforme dédiée à la passion de la lecture et à l'empreinte de livres ! Nous croyons que chaque livre est une porte ouverte sur un monde de découvertes infinies. Notre mission est de rendre les livres accessibles à tous, tout en créant une communauté de lecteurs enthousiastes. Rejoignez-nous et faites partie de cette aventure littéraire !
+          </p>
+          <div class="about-us-mission">
+            <div class="mission-item">
+              <i class="fas fa-book-reader"></i>
+              <h4>Facilité d'Accès</h4>
+              <p>Notre plateforme permet un accès simple et rapide à des milliers de livres, où que vous soyez.</p>
+            </div>
+            <div class="mission-item">
+              <i class="fas fa-users"></i>
+              <h4>Communauté de Lecteurs</h4>
+              <p>Rejoignez une communauté dynamique de passionnés de lecture et partagez vos livres favoris.</p>
+            </div>
+            <div class="mission-item">
+              <i class="fas fa-heart"></i>
+              <h4>Passion pour la Lecture</h4>
+              <p>Nous sommes des amoureux des livres et nous souhaitons transmettre cette passion à travers notre service.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-us-image">
+          <img src="../../assets/enfant.jpg" alt="Image About Us">
+        </div>
+      </section>
+      <section id="faq" class="faq-section">
+        <h2 class="section-title">Foire Aux Questions (FAQ)</h2>
+        <p class="section-text">Vous avez des questions ? Nous avons les réponses ! Consultez les questions fréquemment posées ci-dessous pour en savoir plus.</p>
+
+        <div class="faq-items">
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-question-circle"></i>
+              <h4>Comment puis-je emprunter un livre ?</h4>
+            </div>
+            <p class="faq-answer">Pour emprunter un livre, il vous suffit de vous inscrire sur notre plateforme et de choisir un livre dans notre collection. Vous pourrez ensuite le réserver et le retirer en ligne ou dans notre bibliothèque.</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-question-circle"></i>
+              <h4>Les livres sont-ils gratuits ?</h4>
+            </div>
+            <p class="faq-answer">Oui, tous les livres disponibles sur notre plateforme sont gratuits à emprunter, vous n'avez qu'à vous inscrire et commencer à lire !</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-question-circle"></i>
+              <h4>Combien de livres puis-je emprunter à la fois ?</h4>
+            </div>
+            <p class="faq-answer">Vous pouvez emprunter jusqu'à 5 livres simultanément. Si vous souhaitez emprunter plus de livres, il suffit de les retourner pour pouvoir en réserver d'autres.</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-question-circle"></i>
+              <h4>Puis-je rendre un livre en retard ?</h4>
+            </div>
+            <p class="faq-answer">Il est préférable de respecter la date de retour pour permettre à d'autres utilisateurs d'emprunter les livres. Toutefois, si vous êtes en retard, des frais de retard peuvent s'appliquer.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2 class="section-title">Contactez-Nous</h2>
+        <p class="section-text">Vous avez des questions ou souhaitez en savoir plus ? Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+
+        <div class="contact-form-container">
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn-submit">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-top section">
+    <div class="container">
+      <!-- Footer Brand -->
+      <div class="footer-brand">
+        <!-- Logo ajouté ici -->
+        <a href="#" class="logo">
+          <img src="../../assets/bib-removebg-preview.png" alt="VisionLib Logo" style="height: 50px; width: auto;">
+        </a>
+        <p class="footer-text">Rejoignez notre NewsLetter !</p>
+        <form action="#" class="newsletter-form">
+          <input type="email" name="email_address" placeholder="Entrez votre email" required class="email-field">
+          <button type="submit" class="form-btn">
+            <span class="material-icons">send</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Footer Contact -->
+      <ul class="footer-list">
+        <li><p class="footer-list-title">Nous contactez</p></li>
+        <li>
+          <span class="material-icons">location_on</span>
+          <address class="contact-link">4517 Washington Ave. Manchester</address>
+        </li>
+        <li>
+          <span class="material-icons">phone</span>
+          <a href="tel:+7894631546876" class="contact-link">+7894631546876</a>
+        </li>
+        <li>
+          <span class="material-icons">email</span>
+          <a href="mailto:info@webtutorial.com" class="contact-link">info@VisionLib.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2024 VisionLib. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

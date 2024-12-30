@@ -1,0 +1,55 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4 text-primary font-weight-bold text-uppercase" style="font-size: 2.5rem; letter-spacing: 2px; position: relative;">
+    <span class="left-dash"></span> Demande d'emprunt : <span class="right-dash"></span>
+  </h2>
+  <form [formGroup]="empruntForm" (ngSubmit)="onSubmit()">
+
+    <!-- Nom du Livre -->
+    <div class="form-group mb-4">
+      <label for="nomLivre" class="text-secondary">Nom du Livre</label>
+      <input type="text" id="nomLivre" class="form-control custom-input" formControlName="nomLivre" required />
+      <div *ngIf="empruntForm.get('nomLivre')?.invalid && empruntForm.get('nomLivre')?.touched" class="text-danger small">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Nom Complet de l'Utilisateur -->
+    <div class="form-group mb-4">
+      <label for="fullName" class="text-secondary">Nom Complet</label>
+      <input type="text" id="fullName" class="form-control custom-input" formControlName="fullName" required />
+      <div *ngIf="empruntForm.get('fullName')?.invalid && empruntForm.get('fullName')?.touched" class="text-danger small">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Date d'Acquisition -->
+    <div class="form-group mb-4">
+      <label for="dateAcquisition" class="text-secondary">Date d'Acquisition</label>
+      <input type="date" id="dateAcquisition" class="form-control custom-input" formControlName="dateAcquisition" required />
+      <div *ngIf="empruntForm.get('dateAcquisition')?.invalid && empruntForm.get('dateAcquisition')?.touched" class="text-danger small">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Date de Retour -->
+    <div class="form-group mb-4">
+      <label for="dateRetour" class="text-secondary">Date de Retour</label>
+      <input type="date" id="dateRetour" class="form-control custom-input" formControlName="dateRetour" required />
+      <div *ngIf="empruntForm.get('dateRetour')?.invalid && empruntForm.get('dateRetour')?.touched" class="text-danger small">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Bouton Ajouter -->
+    <div class="form-group mt-4 text-center">
+      <button type="submit" class="btn btn-primary custom-button" [disabled]="empruntForm.invalid">
+        <i class="fas fa-plus-circle"></i> Ajouter
+      </button>
+    </div>
+
+    <!-- Messages de succès/erreur -->
+    <div *ngIf="successMessage" class="alert alert-success mt-3 text-center">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="alert alert-danger mt-3 text-center">{{ errorMessage }}</div>
+
+  </form>
+</div>

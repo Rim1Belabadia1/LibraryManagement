@@ -1,0 +1,87 @@
+<div class="container">
+  <h2>Gestion des livres</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Titre</label>
+      <input type="text" [(ngModel)]="book.title" name="title" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>Éditeur</label>
+      <input type="text" [(ngModel)]="book.publisher" name="publisher" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>Année de publication</label>
+      <input type="number" [(ngModel)]="book.publicationYear" name="publicationYear" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>ISBN</label>
+      <input type="text" [(ngModel)]="book.isbn" name="isbn" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>Genre</label>
+      <input type="text" [(ngModel)]="book.genre" name="genre" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>Langue</label>
+      <input type="text" [(ngModel)]="book.language" name="language" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>Nombre de pages</label>
+      <input type="number" [(ngModel)]="book.pageCount" name="pageCount" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>Résumé</label>
+      <textarea [(ngModel)]="book.summary" name="summary" class="form-control" required></textarea>
+    </div>
+    <div class="form-group">
+      <label>Date d'acquisition</label>
+      <input type="date" [(ngModel)]="book.acquisitionDate" name="acquisitionDate" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>État</label>
+      <input type="text" [(ngModel)]="book.condition" name="condition" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>Disponibilité</label>
+      <select [(ngModel)]="book.availability" name="availability" class="form-control" required>
+        <option [ngValue]="true">Disponible</option>
+        <option [ngValue]="false">Non disponible</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Emplacement</label>
+      <input type="text" [(ngModel)]="book.location" name="location" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label>Mots-clés</label>
+      <input type="text" [(ngModel)]="book.keywords" name="keywords" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Ajouter / Modifier</button>
+    <button type="button" (click)="resetForm()" class="btn btn-secondary">Réinitialiser</button>
+  </form>
+
+  <h3>Liste des livres</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Éditeur</th>
+        <th>Année</th>
+        <th>ISBN</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.title }}</td>
+        <td>{{ book.publisher }}</td>
+        <td>{{ book.publicationYear }}</td>
+        <td>{{ book.isbn }}</td>
+        <td>
+          <button (click)="editBook(book)" class="btn btn-warning">Modifier</button>
+          <button (click)="deleteBook(book.id)" class="btn btn-danger">Supprimer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,138 @@
+/* Global Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../../assets/0_jlh5x3jEmxZDmKbg.jpg'); /* Remplacez par le chemin de votre image */
+  background-size: cover; /* Couvre toute la page */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Évite que l'image se répète */
+  background-attachment: fixed; /* L'image reste fixe lors du défilement */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+
+
+/* Heading Styles */
+h2 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+
+}
+
+.form-group label {
+  color: #444;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-control {
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.invalid-feedback {
+  color: #e74c3c;
+  font-size: 0.875rem;
+}
+
+/* Buttons */
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 50px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Form Layout */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.full-width-button {
+  width: 100%;
+  border-radius: 50px;
+}
+
+/* Icon Styling */
+.bi {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container-sm {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Assurez-vous que l'image s'adapte bien */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajuste la mise en page pour les petits écrans */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,22 @@
+/* src/app/add-book/add-book.component.css */
+.container {
+  background-color: white; /* Fond blanc */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 50px auto; /* Centrer horizontalement et ajouter une marge en haut */
+  text-align: center; /* Centrer le texte à l'intérieur du formulaire */
+}
+
+h2 {
+  margin-bottom: 20px; /* Espace sous le titre */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espacement entre les champs de formulaire */
+}
+
+.btn {
+  margin-top: 20px; /* Espacement au-dessus du bouton */
+}

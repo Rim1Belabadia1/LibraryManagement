@@ -1,0 +1,28 @@
+<section class="vh-100">
+  <div class="container h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-8 col-lg-6 col-xl-4">
+        <form (ngSubmit)="signup()">
+          <!-- Nom d'utilisateur -->
+          <div class="form-outline mb-4">
+            <input type="text" [(ngModel)]="username" name="username" class="form-control form-control-lg" placeholder="Nom d'utilisateur" required />
+            <label class="form-label">Nom d'utilisateur</label>
+          </div>
+
+          <!-- Mot de passe -->
+          <div class="form-outline mb-3">
+            <input type="password" [(ngModel)]="password" name="password" class="form-control form-control-lg" placeholder="Mot de passe" required />
+            <label class="form-label">Mot de passe</label>
+          </div>
+
+          <!-- Bouton de soumission -->
+          <button type="submit" class="btn btn-dark btn-lg">S'inscrire</button>
+        </form>
+
+        <div class="text-center mt-4">
+          <p>Déjà un compte ? <a routerLink="/login" class="btn btn-link">Se connecter ici</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

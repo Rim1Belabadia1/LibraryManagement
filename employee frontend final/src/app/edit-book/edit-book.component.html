@@ -1,0 +1,68 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Modifier le Livre</h2>
+  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" id="name" formControlName="name" class="form-control" required>
+      <div *ngIf="bookForm.get('name')?.invalid && bookForm.get('name')?.touched" class="text-danger">
+        Le nom est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input type="text" id="type" formControlName="type" class="form-control" required>
+      <div *ngIf="bookForm.get('type')?.invalid && bookForm.get('type')?.touched" class="text-danger">
+        Le type est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="auteur">Auteur</label>
+      <input type="text" id="auteur" formControlName="auteur" class="form-control" required>
+      <div *ngIf="bookForm.get('auteur')?.invalid && bookForm.get('auteur')?.touched" class="text-danger">
+        L'auteur est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="editeur">Éditeur</label>
+      <input type="text" id="editeur" formControlName="editeur" class="form-control" required>
+      <div *ngIf="bookForm.get('editeur')?.invalid && bookForm.get('editeur')?.touched" class="text-danger">
+        L'éditeur est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="dateDePublication">Date de Publication</label>
+      <input type="date" id="dateDePublication" formControlName="dateDePublication" class="form-control" required>
+      <div *ngIf="bookForm.get('dateDePublication')?.invalid && bookForm.get('dateDePublication')?.touched" class="text-danger">
+        La date de publication est invalide.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" formControlName="description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="availability">Disponibilité</label>
+      <input type="text" id="availability" formControlName="availability" class="form-control" required>
+      <div *ngIf="bookForm.get('availability')?.invalid && bookForm.get('availability')?.touched" class="text-danger">
+        La disponibilité est requise.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="photo">Photo</label>
+      <input type="file" id="photo" (change)="onFileChange($event)" class="form-control">
+      <div *ngIf="fileError" class="text-danger">
+        {{ fileError }}
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="bookForm.invalid">Modifier</button>
+    <a routerLink="/books" class="btn btn-secondary">Annuler</a>
+  </form>
+</div>
